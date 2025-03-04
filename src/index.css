@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: #d29a5a;
+}
+
+body {
+  font-family: Asap, serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.best-food{
+  background-image:url(./assets/Images/Best-food-bg.jpg);
+  background-position:right;
+}
