@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
         
         {/* Icons Section */}
-        <ul className="flex justify-center space-x-4 p-4">
+        <ul className="hidden md:flex justify-center space-x-4 p-4  ">
             <li className="cursor-pointer"><a href="https://www.facebook.com/muhaiminultasin" target="_blank"><FaFacebookF/></a></li>
             <li className="cursor-pointer"><a href="https://www.linkedin.com/in/tasinmuhaiminul1/" target="_blank"><FaLinkedinIn/></a></li>
           </ul>
@@ -37,10 +37,9 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
-          <NavLink to="/" className="block p-4 border-b text-gray-700 hover:text-gray-900">Home</NavLink>
-          <NavLink to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
-          <NavLink to="/services" className="block p-4 border-b text-gray-700 hover:text-gray-900">Services</NavLink>
-          <NavLink to="/contact" className="block p-4 border-b text-gray-700 hover:text-gray-900">Contact</NavLink>
+          <NavLink onClick={() => {setIsOpen(!isOpen)}} to="/" className="block p-4 border-b text-gray-700 hover:text-gray-900">Home</NavLink>
+          <NavLink onClick={() => {setIsOpen(!isOpen)}} to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
+          <NavLink onClick={() => {setIsOpen(!isOpen)}} to="/contact" className="block p-4 border-b text-gray-700 hover:text-gray-900">Contact</NavLink>
           <ul className="flex justify-center space-x-4 p-4">
             <li>fb</li>
             <li>lnkdn</li>

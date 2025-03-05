@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "@heroui/react";
-import ConHero from "../Components/ConHero";
+import PageHero from "../Components/PageHero";
 import { IoMdBook } from "react-icons/io";
 import { LuPhone } from "react-icons/lu";
 import { TfiEmail } from "react-icons/tfi";
 import { GoClock } from "react-icons/go";
+
 
 const Contact = () => {
   const [reservation, setReservation] = useState({ name: "", email: "", phone: "", subject: "" , date: "", time: "" });
@@ -55,7 +56,7 @@ const Contact = () => {
   return (
     <>
         
-        <ConHero/>
+        <PageHero text={"Contact Us"}/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 pt-28 px-10 md:px-20">
 

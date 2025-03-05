@@ -2,6 +2,7 @@ import React from 'react';
 import menu1 from '../assets/Images/appetizer@2x.jpg';
 import menu2 from '../assets/Images/menu-dish1@2x.jpg';
 import menu3 from '../assets/Images/menu-dessert@2x.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const OurMenu = () => {
 
@@ -22,6 +23,8 @@ const OurMenu = () => {
             tag:"Ice Cream / Cake / Pudding"
         },
     ]
+
+    const navigate = useNavigate();
     
   return (
     <>
@@ -46,7 +49,7 @@ const OurMenu = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 '>
             {
                 menuDetails.map(({img,title,tag},i) => {
-                    return <div key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
+                    return <div onClick={() => {navigate("/menu")}} key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
                         <div className='overflow-hidden cursor-pointer mb-5'>
                             <img src={img} className='hover:scale-110 transition-all' alt="" />
                         </div>
