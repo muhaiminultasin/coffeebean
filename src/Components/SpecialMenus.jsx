@@ -1,5 +1,5 @@
 import React from "react";
-import menu1 from '../assets/Images/special-menu1.jpg'
+import menu1 from '../assets/Images/special-menu-1.png'
 import menu2 from '../assets/Images/special-menu-2.jpg'
 import menu3 from '../assets/Images/special-menu-3.jpg'
 
@@ -43,7 +43,7 @@ const SpecialMenus = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 px-10 items-center md:px-20 pb-32 bg-[#130F0C] text-white">
-        <div className="md:pe-10">
+        <div className="md:pe-10 mt-16 md:mt-0">
           <div className=" flex items-center gap-3 text-[#D29A5A]">
             <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>
             <p className="font-semibold ">THIS WEEK</p>

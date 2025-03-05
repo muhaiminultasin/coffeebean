@@ -1,14 +1,19 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-white shadow-md fixed w-full xl:container z-50">
       <div className=" flex justify-between items-center p-4">
         {/* Logo Section */}
-        <div className="text-xl font-bold">The Coffee Bean</div>
+        <div onClick={() => {navigate("/")}} className="text-xl font-bold cursor-pointer">The Coffee Bean</div>
         
         {/* Navigation List */}
         <div className="hidden md:flex space-x-6">
@@ -18,10 +23,10 @@ export default function Navbar() {
         </div>
         
         {/* Icons Section */}
-        <div className="hidden md:flex space-x-4">
-          <button className="p-2 bg-gray-200 rounded-full">🔍</button>
-          <button className="p-2 bg-gray-200 rounded-full">🔔</button>
-        </div>
+        <ul className="flex justify-center space-x-4 p-4">
+            <li className="cursor-pointer"><a href="https://www.facebook.com/muhaiminultasin" target="_blank"><FaFacebookF/></a></li>
+            <li className="cursor-pointer"><a href="https://www.linkedin.com/in/tasinmuhaiminul1/" target="_blank"><FaLinkedinIn/></a></li>
+          </ul>
         
         {/* Mobile Menu Button */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -36,10 +41,10 @@ export default function Navbar() {
           <NavLink to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
           <NavLink to="/services" className="block p-4 border-b text-gray-700 hover:text-gray-900">Services</NavLink>
           <NavLink to="/contact" className="block p-4 border-b text-gray-700 hover:text-gray-900">Contact</NavLink>
-          <div className="flex justify-center space-x-4 p-4">
-            <button className="p-2 bg-gray-200 rounded-full">🔍</button>
-            <button className="p-2 bg-gray-200 rounded-full">🔔</button>
-          </div>
+          <ul className="flex justify-center space-x-4 p-4">
+            <li>fb</li>
+            <li>lnkdn</li>
+          </ul>
         </div>
       )}
     </nav>

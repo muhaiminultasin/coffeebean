@@ -1,5 +1,5 @@
 import React from "react";
-import serviceMain from "../assets/Images/services-main.jpg";
+import serviceMain from "../assets/Images/service.jpg";
 import { GiForkKnifeSpoon } from "react-icons/gi";
 import { IoStorefront } from "react-icons/io5";
 

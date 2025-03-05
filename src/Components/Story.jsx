@@ -1,9 +1,14 @@
 import React from "react";
-import story from "../assets/Images/our-story.jpg";
+import story from "../assets/Images/story.jpg";
 import { Button } from "@heroui/react";
 import { FaCheck } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Story = () => {
+
+  const navigate = useNavigate();
+
+
   const storyList = [
     {
       text: "Fine Dining",
@@ -66,7 +71,7 @@ const Story = () => {
               })}
             </div>
 
-            <Button className="w-fit bg-[#D29A5A] text-black font-bold mt-5">
+            <Button onPress={() => {navigate("/about")}} className="w-fit bg-[#D29A5A] hover:bg-transparent hover:border hover:text-white tracking-wider">
               Learn More
             </Button>
           </div>

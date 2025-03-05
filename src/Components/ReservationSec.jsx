@@ -1,7 +1,11 @@
 import { Button } from '@heroui/react';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ReservationSec = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
       <div className='py-10 px-10 md:px-20 grid gris-cols-1 md:grid-cols-2 bg-[#130F0C]'>
@@ -23,7 +27,7 @@ const ReservationSec = () => {
         </div>
 
         <div className='flex  md:justify-end items-center mt-5 md:mt-0'>
-        <Button className=' bg-[#D29A5A] hover:bg-transparent hover:border hover:text-white tracking-wider'>Make A reservation</Button>
+        <Button onPress={() => {navigate("/contact")}} className=' bg-[#D29A5A] hover:bg-transparent hover:border hover:text-white tracking-wider'>Make A reservation</Button>
         </div>
       </div>
     </>

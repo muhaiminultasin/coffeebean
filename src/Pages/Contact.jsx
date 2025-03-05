@@ -29,7 +29,7 @@ const Contact = () => {
 
             <div className="pt-28">
                 <p className="text-4xl font-medium text-[#D29A5A]">Welcome to our Restaurant</p>
-                <p className="mt-2">Indulge in Exceptional Flavors and Unforgettable Dining Experiences</p>
+                <p className="mt-2 text-[#D1C8BB]">Indulge in Exceptional Flavors and Unforgettable Dining Experiences</p>
             </div>
 
             <form onSubmit={handleSubmit} className=" md:w-3/5 mx-auto grid grid-cols-1 space-y-5 mt-5 ">
