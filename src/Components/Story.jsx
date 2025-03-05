@@ -62,9 +62,9 @@ const Story = () => {
             </p>
 
             <div className="grid grid-cols-2 my-5">
-              {storyList.map(({ text }) => {
+              {storyList.map(({ text },i) => {
                 return (
-                  <div className="flex items-center gap-2 justify-start text-[#D1C8BB]">
+                  <div key={i} className="flex items-center gap-2 justify-start text-[#D1C8BB]">
                     <div className="bg-[#D29A5A] p-0.5 rounded-full "><FaCheck className="text-[8px] text-black"/></div> { text}
                   </div>
                 );
