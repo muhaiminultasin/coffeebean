@@ -9,8 +9,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
+  const closeNav = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
-    <nav className="bg-white shadow-md fixed w-full xl:container z-50">
+    <nav className="bg-white shadow-md fixed w-full xl:container z-50 ">
       <div className=" flex justify-between items-center p-4">
         {/* Logo Section */}
         <div onClick={() => {navigate("/")}} className="text-xl font-bold cursor-pointer">The Coffee Bean</div>
@@ -24,22 +28,24 @@ export default function Navbar() {
         
         {/* Icons Section */}
         <ul className="hidden md:flex justify-center space-x-4 p-4  ">
-            <li className="cursor-pointer"><a href="https://www.facebook.com/muhaiminultasin" target="_blank"><FaFacebookF/></a></li>
-            <li className="cursor-pointer"><a href="https://www.linkedin.com/in/tasinmuhaiminul1/" target="_blank"><FaLinkedinIn/></a></li>
-          </ul>
+          <li className="cursor-pointer"><a href="https://www.facebook.com/muhaiminultasin" target="_blank"><FaFacebookF/></a></li>
+          <li className="cursor-pointer"><a href="https://www.linkedin.com/in/tasinmuhaiminul1/" target="_blank"><FaLinkedinIn/></a></li>
+        </ul>
         
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden transition-all delay-700" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? "✖" : "☰"}
         </button>
       </div>
       
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <NavLink onClick={() => {setIsOpen(!isOpen)}} to="/" className="block p-4 border-b text-gray-700 hover:text-gray-900">Home</NavLink>
-          <NavLink onClick={() => {setIsOpen(!isOpen)}} to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
-          <NavLink onClick={() => {setIsOpen(!isOpen)}} to="/contact" className="block p-4 border-b text-gray-700 hover:text-gray-900">Contact</NavLink>
+        <div className={`md:hidden bg-white shadow-md transform transition-all duration-300 ${
+          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+        }`}>
+          <NavLink onClick={closeNav()} to="/" className="block p-4 border-b text-gray-700 hover:text-gray-900">Home</NavLink>
+          <NavLink onClick={closeNav()} to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
+          <NavLink onClick={closeNav()} to="/contact" className="block p-4 border-b text-gray-700 hover:text-gray-900">Contact</NavLink>
           <ul className="flex justify-center space-x-4 p-4">
             <li>fb</li>
             <li>lnkdn</li>
