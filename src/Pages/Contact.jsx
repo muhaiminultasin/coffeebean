@@ -9,7 +9,7 @@ import { GoClock } from "react-icons/go";
 
 
 const Contact = () => {
-  const [reservation, setReservation] = useState({ name: "", email: "", phone: "", subject: "" , date: "", time: "" });
+  const [reservation, setReservation] = useState({ name: "", email: "", phone: "", address: "", dish: "" , date: "", time: "" });
 
   const handleChange = (e) => {
     setReservation({ ...reservation, [e.target.name]: e.target.value });
@@ -24,8 +24,8 @@ const Contact = () => {
       reservation,
       "your_user_id" 
     ).then(
-      () => alert("Reservation request sent! You will receive a confirmation email soon."),
-      () => alert("Failed to send reservation request. Please try again.")
+      () => alert("Order request sent! You will receive a confirmation email soon."),
+      () => alert("Failed to send order request. Please try again.")
     );
   };
 
@@ -56,17 +56,17 @@ const Contact = () => {
   return (
     <>
         
-        <PageHero text={"Contact Us"}/>
+        <PageHero title={"Order Your Favorite Dish"} desc={"Indulge in a mouthwatering meal delivered directly to your doorstep! Simply complete the form below with accurate information, and let us handle the rest. Treat yourself—you deserve it!"}/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 pt-28 px-10 md:px-20">
 
         <div>
           <div className=" flex items-center gap-3 text-[#D29A5A]">
                 <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>
-                <p className="font-semibold ">Reserve</p>
+                <p className="font-semibold ">Order</p>
             </div>
             <h1 className="text-white font-bold text-start text-5xl mt-5">
-                Reserve A Table
+                Place your order now
             </h1>
            <p className="text-[#D1C8BB] mt-5">
            Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite.
@@ -101,11 +101,12 @@ const Contact = () => {
                 <p className="mt-2 text-[#D1C8BB]">Let us know how to get back to you</p>
             </div>
 
-            <form onSubmit={handleSubmit} className="  mx-auto grid grid-cols-1 space-y-5 mt-5 ">
+            <form onSubmit={handleSubmit} className="w-full mx-auto grid grid-cols-1 space-y-5 mt-5 ">
                 <input type="text" className="border bg-inherit px-4 py-3 outline-none" name="name" placeholder="Your Name" value={reservation.name} onChange={handleChange} required />
                 <input type="email" className="border bg-inherit px-4 py-3 outline-none" name="email" placeholder="Your Email" value={reservation.email} onChange={handleChange} required />
                 <input type="phone" className="border bg-inherit px-4 py-3 outline-none" name="phone" placeholder="Your Number" value={reservation.phone} onChange={handleChange} required />
-                <input type="phone" className="border bg-inherit px-4 py-3 outline-none" name="subject" placeholder="Your Subject" value={reservation.subject} onChange={handleChange} required />
+                <input type="text" className="border bg-inherit px-4 py-3 outline-none" name="address" placeholder="Your address" value={reservation.address} onChange={handleChange} required />
+                <input type="text" className="border bg-inherit px-4 py-3 outline-none" name="dish" placeholder="Dish name (e.g., Margherita Pizza)" value={reservation.dish} onChange={handleChange} required />
                 <div className="grid grid-cols-1 text-start">
                   <label htmlFor="reservation-date" className="mb-2 text-[#D1C8BB]">Select a date :</label>
                   <input id="reservation-date" type="date" className="border bg-white  px-4 py-3 outline-none white text-black" name="date" value={reservation.date} onChange={handleChange} required placeholder="Enter date"/>
@@ -114,7 +115,7 @@ const Contact = () => {
                   <label htmlFor="reservation-time" className="text-start mb-2 text-[#D1C8BB]">Select a time</label>
                   <input id="reservation-time" type="time" className="border bg-white text-black px-4 py-3 outline-none" name="time" value={reservation.time} onChange={handleChange} required placeholder="Enter time"/>
                 </div>
-                <Button type="submit" className="w-fit bg-[#D29A5A] hover:bg-transparent hover:border hover:text-white tracking-wider mx-auto">Contact Us</Button>
+                <Button type="submit" className="w-fit bg-[#D29A5A] hover:bg-transparent hover:border hover:text-white tracking-wider mx-auto">Order Now</Button>
             </form>
         </div>
         </div>

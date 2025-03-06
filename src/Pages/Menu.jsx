@@ -52,7 +52,7 @@ const Menu = () => {
 
   return (
     <>
-      <PageHero text={"Our Menu"}/>
+      <PageHero title={"Our Menu"} desc={"Welcome to our menu, where each dish offers a unique story and experience. Our chefs use fresh, locally sourced ingredients to create a diverse selection of mouthwatering options, blending culinary tradition with modern flair.We cater to every palate and dietary need, with choices for gluten-free, vegetarian, and vegan diets, ensuring satisfying meals for all. Celebrating the cooking process, we focus on quality and let our ingredients shine. Each meal is crafted with love and passion, nourishing both body and soul. Enjoy the comforting aromas, textures, and warmth of our flavors."}/>
 
       <div className='px-10 md:px-20 pt-40 space-y-20'>
         <div className="Appetizer text-white">
