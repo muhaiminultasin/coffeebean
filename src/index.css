@@ -18,5 +18,6 @@ body {
 
 .best-food{
   background-image:url(./assets/Images/Best-food-bg.jpg);
-  background-position:right;
+  background-size:cover;
+  background-position: bottom;
 }

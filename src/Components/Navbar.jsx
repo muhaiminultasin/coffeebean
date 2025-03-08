@@ -27,6 +27,7 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-6">
           <NavLink to="/" className="font-medium text-gray-700 hover:text-gray-900">Home</NavLink>
           <NavLink to="/menu" className="font-medium text-gray-700 hover:text-gray-900">Menu</NavLink>
+          <NavLink to="/dish" className="font-medium text-gray-700 hover:text-gray-900">Dishes</NavLink>
           <NavLink to="/order" className="font-medium text-gray-700 hover:text-gray-900">Order</NavLink>
           <NavLink to="/about" className="font-medium text-gray-700 hover:text-gray-900">About</NavLink>
         </div>
@@ -56,6 +57,7 @@ export default function Navbar() {
         <div className={`md:hidden bg-white shadow-md transform transition-all duration-300 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}>
           <NavLink onClick={closeNav} to="/" className="block p-4 border-b text-gray-700 hover:text-gray-900">Home</NavLink>
           <NavLink onClick={closeNav} to="/menu" className="block p-4 border-b text-gray-700 hover:text-gray-900">Menu</NavLink>
+          <NavLink onClick={closeNav} to="/dish" className="block p-4 border-b text-gray-700 hover:text-gray-900">Dishes</NavLink>
           <NavLink onClick={closeNav} to="/order" className="block p-4 border-b text-gray-700 hover:text-gray-900">Order</NavLink>
           <NavLink onClick={closeNav} to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
           <ul className="flex justify-center space-x-4 p-4">

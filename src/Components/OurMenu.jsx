@@ -49,7 +49,7 @@ const OurMenu = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 '>
             {
                 menuDetails.map(({img,title,tag},i) => {
-                    return <div onClick={() => {navigate("/menu")}} key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
+                    return <div onClick={() => {navigate("/dish")}} key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
                         <div className='overflow-hidden cursor-pointer mb-5'>
                             <img src={img} className='hover:scale-110 transition-all' alt="" />
                         </div>

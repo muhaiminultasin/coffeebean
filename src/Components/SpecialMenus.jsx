@@ -72,7 +72,7 @@ const SpecialMenus = () => {
         </div>
       </div>
 {/* Best quality foods */}
-      <div className="best-food py-32  text-white">
+      <div className="best-food flex flex-col justify-center items-center  text-white h-[50vh] md:h-[90vh]">
         <h1 className="text-5xl font-bold text-center">Best Quality Foods</h1>
         <div className="flex w-fit mx-auto mt-5 gap-5 justify-center items-center">
           <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>

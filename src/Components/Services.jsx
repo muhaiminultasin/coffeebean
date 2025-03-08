@@ -41,9 +41,9 @@ const Services = () => {
             pretiumus quis, sem In.
           </p>
 
-          <div className="flex justify-between items-center mt-5">
+          <div className="flex gap-10 items-center mt-5">
             {spaceAndVarient.map(({icon, number, text},i) => {
-              return <div key={i} className="flex justify-between gap-3 items-center">
+              return <div key={i} className="flex  gap-5 items-center">
                 <div>
                   {icon}
                 </div>
