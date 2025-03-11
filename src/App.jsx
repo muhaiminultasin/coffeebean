@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Contact from './Pages/Contact';
 import ScrollOnTop from './ScrollOnTop';
 import Dish from './Pages/Dish';
+import DishDetails from './Pages/DishDetails';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/order" element={<Contact />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/dish" element={<Dish />} />
+        <Route path="/dish/:id" element={<DishDetails/>}/>
       </Routes>
       <Footer/>
     </Router>

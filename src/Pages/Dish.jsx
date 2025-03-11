@@ -1,12 +1,12 @@
 import React from 'react';
 import DishList from '../Components/DishList';
+import PageHero from '../Components/PageHero';
 
 const Dish = () => {
   return (
     <>
-      <div className='pt-40'>
+        <PageHero title={"Dish"} desc={"Hello"}/>
         <DishList/>
-      </div>
     </>
   )
 }
