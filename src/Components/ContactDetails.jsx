@@ -31,7 +31,7 @@ const ContactDetails = () => {
 
   return (
     <>
-      <div className='px-10 md:px-20 grid grid-cols-1 md:grid-cols-4 space-y-10 py-20 bg-[#130F0C]'>
+      <div className='px-10 md:px-20 grid grid-cols-1 md:grid-cols-4 space-y-10 md:space-y-0 py-20 bg-[#130F0C]'>
         {Details.map(({icon, text1,text2},i) => {
             return <div key={i} className='flex md:justify-center items-center  gap-5'>
                 <div>

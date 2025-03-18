@@ -10,17 +10,17 @@ const OurMenu = () => {
         {
             img:menu1,
             title:"Appetizer",
-            tag:"Snacks / Salads / Soups"
+            tag:"Snacks / Salads / Soups",
         },
         {
             img:menu2,
             title:"Main Dish",
-            tag:"Steaks / Grills / Pasta"
+            tag:"Steaks / Grills / Pasta",
         },
         {
             img:menu3,
             title:"Dessert",
-            tag:"Ice Cream / Cake / Pudding"
+            tag:"Ice Cream / Cake / Pudding",
         },
     ]
 
@@ -48,8 +48,8 @@ const OurMenu = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 '>
             {
-                menuDetails.map(({img,title,tag},i) => {
-                    return <div onClick={() => {navigate("/dish")}} key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
+                menuDetails.map(({img,title,tag,path},i) => {
+                    return <div onClick={() => {navigate(`/dish`)}} key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
                         <div className='overflow-hidden cursor-pointer mb-5'>
                             <img src={img} className='hover:scale-110 transition-all' alt="" />
                         </div>

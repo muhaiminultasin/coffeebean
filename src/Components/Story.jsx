@@ -27,7 +27,7 @@ const Story = () => {
   return (
     <>
       <div className="py-32 px-10 md:px-20 bg-[#130F0C] item text-center text-white">
-        <p className="text-white font-semibold text-3xl leading-relaxed">
+        <p className="text-white font-semibold text-3xl  leading-relaxed">
           <i>
             The discovery of a new dish does more for the happiness of <br />{" "}
             mankind than the discovery of a star.
@@ -36,7 +36,7 @@ const Story = () => {
 
         <p className="text-[#D29A5A] mt-5 text-2xl">Anthelme Brillat-Savarin</p>
 
-        <div className="flex w-fit mx-auto mt-5 gap-5 justify-center items-center">
+        <div className="flex w-fit mx-auto mt-5 pb-5 gap-5 justify-center items-center">
           <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>
           <p className="text-[#D29A5A] text-2xl">*</p>
           <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>

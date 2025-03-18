@@ -19,7 +19,7 @@ const Home = () => {
       {/* From Slider.jsx */}
       <Carousel/>
       <OurMenu/>
-      <ReservationSec/>
+      {/* <ReservationSec/> */}
       <ContactDetails/>
     </>
   )

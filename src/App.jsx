@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Menu from './Pages/Menu';
 import Footer from './Components/Footer';
-import Contact from './Pages/Contact';
+import Order from './Pages/Order';
 import ScrollOnTop from './ScrollOnTop';
 import Dish from './Pages/Dish';
 import DishDetails from './Pages/DishDetails';
@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/order" element={<Contact />} />
+        <Route path="/order" element={<Order />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/dish" element={<Dish />} />
         <Route path="/dish/:id" element={<DishDetails/>}/>

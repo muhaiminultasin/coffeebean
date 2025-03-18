@@ -5,7 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { FaChevronLeft } from "react-icons/fa6";
 
 
 const Carousel = () => {
@@ -29,17 +28,25 @@ const Carousel = () => {
       new Swiper(swiperContainer, {
         modules: [Navigation, Pagination, Autoplay],
         loop: true,
-        autoplay: { delay: 3000, disableOnInteraction: false },
+        autoplay: { delay: 3000, disableOnInteraction: true },
         pagination: { el: ".swiper-pagination", clickable: true },
         navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        breakpoints : {
+          640:{
+            slidesPerView:'1',
+          },
+          1040:{
+            slidesPerView:'3'
+          }
+        }
       });
     }
   }, []);
 
   return (
-    <div className="w-full  mx-auto bg-[#130F0C] h-[40vh]">
-      <div className="swiper max-w-lg">
-        <div className="swiper-wrapper">
+    <div className="w-full flex items-center  mx-auto bg-[#130F0C] h-[40vh]">
+      <div className="swiper min-w-lg">
+        <div className="swiper-wrapper ">
           {sliderDetails.map(({ clone, text }, i) => (
             <div key={i} className="swiper-slide  text-white text-center flex flex-col items-center justify-center h-60 p-4 my-5">
               <p className="text-4xl">{clone}</p>

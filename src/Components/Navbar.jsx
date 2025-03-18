@@ -28,7 +28,7 @@ export default function Navbar() {
           <NavLink to="/" className="font-medium text-gray-700 hover:text-gray-900">Home</NavLink>
           <NavLink to="/menu" className="font-medium text-gray-700 hover:text-gray-900">Menu</NavLink>
           <NavLink to="/dish" className="font-medium text-gray-700 hover:text-gray-900">Dishes</NavLink>
-          <NavLink to="/order" className="font-medium text-gray-700 hover:text-gray-900">Order</NavLink>
+          <NavLink to="/contact" className="font-medium text-gray-700 hover:text-gray-900">Contact</NavLink>
           <NavLink to="/about" className="font-medium text-gray-700 hover:text-gray-900">About</NavLink>
         </div>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
           <NavLink onClick={closeNav} to="/" className="block p-4 border-b text-gray-700 hover:text-gray-900">Home</NavLink>
           <NavLink onClick={closeNav} to="/menu" className="block p-4 border-b text-gray-700 hover:text-gray-900">Menu</NavLink>
           <NavLink onClick={closeNav} to="/dish" className="block p-4 border-b text-gray-700 hover:text-gray-900">Dishes</NavLink>
-          <NavLink onClick={closeNav} to="/order" className="block p-4 border-b text-gray-700 hover:text-gray-900">Order</NavLink>
+          <NavLink onClick={closeNav} to="/contact" className="block p-4 border-b text-gray-700 hover:text-gray-900">Contact</NavLink>
           <NavLink onClick={closeNav} to="/about" className="block p-4 border-b text-gray-700 hover:text-gray-900">About</NavLink>
           <ul className="flex justify-center space-x-4 p-4">
             <li>
