@@ -8,22 +8,22 @@ const ContactDetails = () => {
 
     const Details = [
         {
-            icon:<IoMdBook className='text-[40px] text-[#D29A5A]'/>,
+            icon:<IoMdBook className='text-[40px] text-primary'/>,
             text1:"Sovy Restaurant, Jl. Raya",
             text2:"Canggu, Badung, Bali.",
         },
         {
-            icon:<LuPhone className='text-[40px] text-[#D29A5A]'/>,
+            icon:<LuPhone className='text-[40px] text-primary'/>,
             text1:"(+62) 34 53 45 334",
             text2:"(+62) 34 53 45 334",
         },
         {
-            icon:<TfiEmail className='text-[40px] text-[#D29A5A]'/>,
+            icon:<TfiEmail className='text-[40px] text-primary'/>,
             text1:"Reservation.com",
             text2:"Books.com",
         },
         {
-            icon:<GoClock className='text-[40px] text-[#D29A5A]'/>,
+            icon:<GoClock className='text-[40px] text-primary'/>,
             text1:"Open 04:00 pm WITA",
             text2:"Closed 01:00 am WITA",
         },
@@ -37,7 +37,7 @@ const ContactDetails = () => {
                 <div>
                     {icon}
                 </div>
-                <div className='text-[#D1C8BB] text-sm'>
+                <div className='text-secondary text-sm'>
                     <p>{text1}</p>
                     <p>{text2}</p>
                 </div>

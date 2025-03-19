@@ -16,9 +16,9 @@ const Hero = () => {
           More Than Coffee,<br />
           It's a Mood.
           </h1>
-          <p className="text-[#D1C8BB]">Come hungry, leave happy! Indulge in a delightful dining experience where every bite is packed with flavor. From mouthwatering appetizers to satisfying main courses, we serve delicious meals made with fresh ingredients and a passion for great taste. Whether you're craving comfort food or something new, we guarantee you'll leave with a full belly and a happy heart!</p>
+          <p className="text-secondary">Come hungry, leave happy! Indulge in a delightful dining experience where every bite is packed with flavor. From mouthwatering appetizers to satisfying main courses, we serve delicious meals made with fresh ingredients and a passion for great taste. Whether you're craving comfort food or something new, we guarantee you'll leave with a full belly and a happy heart!</p>
 
-          <Button onPress={() => {navigate("/order")}} className='w-fit bg-[#D29A5A] hover:bg-transparent hover:border hover:text-white tracking-wider'>Order Now</Button>
+          <Button onPress={() => {navigate("/dish")}} className='w-fit bg-primary hover:bg-transparent hover:border hover:text-white tracking-wider'>Order Now</Button>
           
         </div>
         <div className="">

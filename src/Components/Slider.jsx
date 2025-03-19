@@ -44,11 +44,11 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="w-full flex items-center  mx-auto bg-[#130F0C] h-[40vh]">
+    <div className="w-full flex items-center px-10 md:px-20 mx-auto bg-[#130F0C] h-[40vh]">
       <div className="swiper min-w-lg">
         <div className="swiper-wrapper ">
           {sliderDetails.map(({ clone, text }, i) => (
-            <div key={i} className="swiper-slide  text-white text-center flex flex-col items-center justify-center h-60 p-4 my-5">
+            <div key={i} className="swiper-slide  text-secondary text-center flex flex-col items-center justify-center h-60 p-4 my-5">
               <p className="text-4xl">{clone}</p>
               <p className="text-lg text-center mt-2">{text}</p>
             </div>

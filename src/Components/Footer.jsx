@@ -27,7 +27,7 @@ const Footer = () => {
         <h1 className='text-4xl font-medium'>The Coffee Bean</h1>
         <ul className='flex justify-center gap-2 md:gap-10 mt-5' >
           {socialList.map(({name,link},i) => {
-            return <li key={i} className='text-[#D29A5A] cursor-pointer'><a href={link} target='_blank'>{name}</a></li>
+            return <li key={i} className='text-primary cursor-pointer'><a href={link} target='_blank'>{name}</a></li>
           })}
         </ul>
       </div>

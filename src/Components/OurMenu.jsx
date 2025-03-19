@@ -30,14 +30,14 @@ const OurMenu = () => {
     <>
       <div className='px-10 md:px-20 py-20 bg-[#130F0C]'>
         <div className='md:w-2/5'>
-            <div className=" flex items-center gap-3 text-[#D29A5A]">
-                <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>
+            <div className=" flex items-center gap-3 text-primary">
+                <div className="w-[50px] h-[2px] bg-primary"></div>
                 <p className="font-semibold ">MENUS</p>
             </div>
             <h1 className="text-white font-bold text-start text-5xl mt-5">
             Our Menus
             </h1>
-           <p className="text-[#D1C8BB] mt-5">
+           <p className="text-secondary mt-5">
            Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite.
            Aenean quis commodoo ligula eget dolor. Aeneanan massa. Cum socies
            natoque penatibus etapi magnis dis parturients montes, nascetur
@@ -49,7 +49,7 @@ const OurMenu = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 '>
             {
                 menuDetails.map(({img,title,tag,path},i) => {
-                    return <div onClick={() => {navigate(`/dish`)}} key={i}  className='text-[#D29A5A] hover:text-[#D1C8BB] transition-all'>
+                    return <div onClick={() => {navigate(`/dish`)}} key={i}  className='text-primary hover:text-secondary transition-all'>
                         <div className='overflow-hidden cursor-pointer mb-5'>
                             <img src={img} className='hover:scale-110 transition-all' alt="" />
                         </div>

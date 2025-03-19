@@ -8,12 +8,12 @@ const Services = () => {
 
   const spaceAndVarient = [
     {
-      icon:<GiForkKnifeSpoon className="text-5xl text-[#D29A5A]"/>,
+      icon:<GiForkKnifeSpoon className="text-5xl text-primary"/>,
       number:"50+",
       text:"Food Variants",
     },
     {
-      icon:<IoStorefront className="text-5xl text-[#D29A5A]"/>,
+      icon:<IoStorefront className="text-5xl text-primary"/>,
       number:"100+",
       text:"Person Capacity",
     }
@@ -26,8 +26,8 @@ const Services = () => {
           <img src={serviceMain} alt="" />
         </div>
         <div className="md:ps-10">
-          <div className=" flex items-center gap-3 text-[#D29A5A]">
-            <div className="w-[50px] h-[2px] bg-[#D29A5A]"></div>
+          <div className=" flex items-center gap-3 text-primary">
+            <div className="w-[50px] h-[2px] bg-primary"></div>
             <p className="font-semibold ">SERVICES</p>
           </div>
           <h1 className="text-white font-bold text-start text-5xl mt-5">
@@ -56,7 +56,7 @@ const Services = () => {
             })}
           </div>
 
-          <p className="mt-5 text-[#D1C8BB] text-sm ">Your attendant is important for us, <span className="hover:underline text-[#D29A5A] cursor-pointer">RESERVE NOW.</span></p>
+          <p className="mt-5 text-[#D1C8BB] text-sm ">Your attendant is important for us, <span className="hover:underline text-primary cursor-pointer">RESERVE NOW.</span></p>
 
         </div>
       </div>

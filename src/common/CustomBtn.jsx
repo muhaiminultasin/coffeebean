@@ -9,7 +9,7 @@ const CustomBtn = ({text,onClick,btnClass}) => {
       name={text}
         onPress={onClick}
         className={cn(
-          "w-fit bg-[#D29A5A] hover:bg-transparent border-[#D29A5A] hover:border hover:border-slate-50 hover:text-white tracking-wider",
+          "w-fit bg-primary hover:bg-transparent border-primary hover:border hover:border-slate-50 hover:text-white tracking-wider",
           btnClass
         )}
       >{text}</Button>
