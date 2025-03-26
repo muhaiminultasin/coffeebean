@@ -35,7 +35,10 @@ const Carousel = () => {
           640:{
             slidesPerView:'1',
           },
-          1040:{
+          768:{
+            slidesPerView:'2',
+          },
+          900:{
             slidesPerView:'3'
           }
         }
@@ -44,17 +47,17 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="w-full flex items-center px-10 md:px-20 mx-auto bg-[#130F0C] h-[40vh]">
+    <div className="w-full flex items-center px-10 md:px-20 mx-auto h-auto ">
       <div className="swiper min-w-lg">
-        <div className="swiper-wrapper ">
+        <div className="swiper-wrapper h-auto">
           {sliderDetails.map(({ clone, text }, i) => (
-            <div key={i} className="swiper-slide  text-secondary text-center flex flex-col items-center justify-center h-60 p-4 my-5">
-              <p className="text-4xl">{clone}</p>
-              <p className="text-lg text-center mt-2">{text}</p>
+            <div key={i} className="swiper-slide h-auto text-secondary text-center flex flex-col items-center justify-center  p-4 my-5">
+              <p className="text-4xl 2xl:text-[6rem]">{clone}</p>
+              <p className="text-lg 2xl:text-[4rem] text-center mt-2 2xl:mt-14">{text}</p>
             </div>
           ))}
         </div>
-        <div className="swiper-pagination "></div>
+        <div className="swiper-pagination h-auto "></div>
       </div>
     </div>
   );

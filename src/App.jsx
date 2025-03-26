@@ -14,7 +14,7 @@ import DishDetails from './Pages/DishDetails';
 
 const App = () => {
   return (
-    <div className="xl:container xl:mx-auto">
+    <div className=" bg-[#130F0C]">
       <Router >
       <Navbar />
       <ScrollOnTop/>

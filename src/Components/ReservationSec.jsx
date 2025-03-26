@@ -8,7 +8,7 @@ const ReservationSec = () => {
 
   return (
     <>
-      <div className='py-10 px-10 md:px-20 grid gris-cols-1 md:grid-cols-2 bg-[#130F0C]'>
+      <div className='py-10 px-10 md:px-20 grid gris-cols-1 md:grid-cols-2 '>
         <div>
         <div className=" flex items-center gap-3 text-primary">
                 <div className="w-[50px] h-[2px] bg-primary"></div>

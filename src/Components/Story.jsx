@@ -1,11 +1,10 @@
 import React from "react";
 import story from "../assets/Images/story.jpg";
-import { Button } from "@heroui/react";
 import { FaCheck } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import CustomBtn from "../common/CustomBtn";
 
 const Story = () => {
-
   const navigate = useNavigate();
 
   const storyList = [
@@ -25,15 +24,17 @@ const Story = () => {
 
   return (
     <>
-      <div className="py-32 px-10 md:px-20 bg-[#130F0C] item text-center text-white">
-        <p className="text-white font-semibold text-3xl  leading-relaxed">
+      <div className="pt-32 px-10 lg:px-20  item text-center text-white">
+        <p className="text-white font-semibold text-3xl 2xl:text-[5rem]  leading-relaxed">
           <i>
             The discovery of a new dish does more for the happiness of <br />{" "}
             mankind than the discovery of a star.
           </i>
         </p>
 
-        <p className="text-primary mt-5 text-2xl">Anthelme Brillat-Savarin</p>
+        <p className="text-primary mt-5 text-2xl 2xl:text-[2rem]">
+          Anthelme Brillat-Savarin
+        </p>
 
         <div className="flex w-fit mx-auto mt-5 pb-5 gap-5 justify-center items-center">
           <div className="w-[50px] h-[2px] bg-primary"></div>
@@ -41,18 +42,18 @@ const Story = () => {
           <div className="w-[50px] h-[2px] bg-primary"></div>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10 md:mt-20">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-10 md:mt-20">
           <img src={story} alt="" />
 
-          <div className="md:ps-10 text-start">
+          <div className="lg:ps-10 text-start">
             <div className=" flex items-center gap-3 text-primary">
               <div className="w-[50px] h-[2px] bg-primary"></div>
-              <p className="font-semibold ">OUR STORY</p>
+              <p className="font-semibold 2xl:text-[1.5rem]">OUR STORY</p>
             </div>
-            <h1 className="text-white font-bold text-start text-5xl mt-5">
+            <h1 className="text-white font-bold text-start text-5xl 2xl:text-[5rem] mt-5">
               The Story
             </h1>
-            <p className="text-secondary mt-5">
+            <p className="text-secondary mt-5 2xl:text-[2rem]">
               Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite.
               Aenean quis commodoo ligula eget dolor. Aeneanan massa. Cum socies
               natoque penatibus etapi magnis dis parturients montes, nascetur
@@ -63,16 +64,20 @@ const Story = () => {
             <div className="grid grid-cols-2 my-5">
               {storyList.map(({ text }, i) => {
                 return (
-                  <div key={i} className="flex items-center gap-2 justify-start text-secondary">
-                    <div className="bg-primary p-0.5 rounded-full "><FaCheck className="text-[8px] text-black"/></div> { text}
+                  <div
+                    key={i}
+                    className="flex items-center gap-2 2xl:gap-5 justify-start text-secondary 2xl:mt-5"
+                  >
+                    <div className="bg-primary p-0.5 2xl:p-1.5 rounded-full ">
+                      <FaCheck className="text-[8px] 2xl:text-[20px] text-black" />
+                    </div>
+                    <p className="2xl:text-[1.5rem]">{text}</p>
                   </div>
                 );
               })}
             </div>
 
-            <Button onPress={() => {navigate("/about")}} className="w-fit bg-primary hover:bg-transparent hover:border hover:text-white tracking-wider">
-              Learn More
-            </Button>
+            <CustomBtn text={"Learn More"} onClick={() => navigate("/about")}/>
           </div>
         </div>
       </div>

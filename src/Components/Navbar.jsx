@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed w-full xl:container z-50">
+    <nav className="bg-white shadow-md fixed w-full  z-50">
       <div className="flex justify-between items-center p-4">
         {/* Logo Section */}
         <div onClick={() => { navigate("/"); }} className="text-xl font-bold cursor-pointer">

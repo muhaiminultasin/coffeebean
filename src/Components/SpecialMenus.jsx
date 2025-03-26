@@ -42,13 +42,13 @@ const SpecialMenus = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 px-10 items-center md:px-20 pb-32 bg-[#130F0C] text-white">
-        <div className="md:pe-10 mt-16 md:mt-0">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 px-10 items-center lg:px-20 pb-32 bg-[#130F0C] text-white">
+        <div className="lg:pe-10 mt-16 md:mt-0">
           <div className=" flex items-center gap-3 text-primary">
             <div className="w-[50px] h-[2px] bg-primary"></div>
-            <p className="font-semibold ">THIS WEEK</p>
+            <p className="font-semibold 2xl:text-[1.5rem]">THIS WEEK</p>
           </div>
-          <h1 className="text-white font-bold text-start text-5xl mt-5">
+          <h1 className="text-white font-bold text-start text-5xl 2xl:text-[5rem] mt-5">
             Specials Menu
           </h1>
 
@@ -57,8 +57,8 @@ const SpecialMenus = () => {
                 menuItems.map(({name, price},i) => {
                     return <div key={i} className="flex justify-between items-center  border-b  border-primary border-b'
                     ">
-                            <p className="text-large font-medium pb-3 ">{name}</p>
-                            <p className="text-primary pb-3">{price}</p>
+                            <p className="text-large 2xl:text-[2rem] font-medium pb-3 ">{name}</p>
+                            <p className="text-primary pb-3 2xl:text-[2rem]">{price}</p>
                     </div>
                 })
             }
@@ -67,17 +67,17 @@ const SpecialMenus = () => {
 
         <div className="columns-2  space-y-3">
             {images.map(({img},i) => {
-                return <img key={i} src={img} alt="" className="w-full"/>
+                return <img key={i} src={img} alt="" className="w-full h-full"/>
             })}
         </div>
       </div>
 {/* Best quality foods */}
       <div className="best-food flex flex-col justify-center items-center  text-white h-[50vh] md:h-[90vh]">
-        <h1 className="text-5xl font-bold text-center">Best Quality Foods</h1>
+        <h1 className="text-5xl 2xl:text-[8rem] font-bold text-center">Best Quality Foods</h1>
         <div className="flex w-fit mx-auto mt-5 gap-5 justify-center items-center">
-          <div className="w-[50px] h-[2px] bg-primary"></div>
-          <p className="text-primary text-2xl">*</p>
-          <div className="w-[50px] h-[2px] bg-primary"></div>
+          <div className="w-[50px] 2xl:w-[100px] h-[2px] 2xl:h-[8px] bg-primary"></div>
+          <p className="text-primary text-2xl 2xl:text-[5rem]">*</p>
+          <div className="w-[50px] 2xl:w-[100px] h-[2px] 2xl:h-[8px] bg-primary"></div>
         </div>
       </div>
     </>

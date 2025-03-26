@@ -21,7 +21,7 @@ const DishDetails = () => {
 
   return (
     <>
-      <div className="flex flex-col-reverse md:grid md:grid-cols-2  gap-10 md:gap-5 pt-32 px-10 md:px-20">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2  gap-10 md:gap-5 pt-32 px-10 md:px-20 2xl:px-32">
         <div className=''>
           <div className=' text-white'>
             <h1 className=' text-4xl font-semibold'>{dish.name}</h1>

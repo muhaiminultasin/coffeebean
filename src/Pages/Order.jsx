@@ -66,22 +66,22 @@ const Order = () => {
 
   const Details = [
     {
-      icon: <IoMdBook className="text-[40px] text-primary" />,
+      icon: <IoMdBook className="text-[40px] 2xl:text-[7rem] text-primary" />,
       text1: "Sovy Restaurant, Jl. Raya",
       text2: "Canggu, Badung, Bali.",
     },
     {
-      icon: <LuPhone className="text-[40px] text-primary" />,
+      icon: <LuPhone className="text-[40px] 2xl:text-[6rem] text-primary" />,
       text1: "(+62) 34 53 45 334",
       text2: "(+62) 34 53 45 334",
     },
     {
-      icon: <TfiEmail className="text-[40px] text-primary" />,
+      icon: <TfiEmail className="text-[40px] 2xl:text-[6rem] text-primary" />,
       text1: "Reservation.com",
       text2: "Books.com",
     },
     {
-      icon: <GoClock className="text-[40px] text-primary" />,
+      icon: <GoClock className="text-[40px] 2xl:text-[6rem] text-primary" />,
       text1: "Open 04:00 pm WITA",
       text2: "Closed 01:00 am WITA",
     },
@@ -96,16 +96,16 @@ const Order = () => {
         }
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 pt-28 px-10 md:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 2xl:gap-14 pt-28 px-10 md:px-20">
         <div>
           <div className=" flex items-center gap-3 text-primary">
             <div className="w-[50px] h-[2px] bg-primary"></div>
-            <p className="font-semibold ">Order</p>
+            <p className="font-semibold 2xl:text-[2.5rem]">Order</p>
           </div>
-          <h1 className="text-white font-bold text-start text-5xl mt-5">
+          <h1 className="text-white font-bold text-start text-5xl 2xl:text-[5rem] mt-5">
             Place your order now
           </h1>
-          <p className="text-secondary mt-5">
+          <p className="text-secondary mt-5  2xl:text-[2rem]">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             quis commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus
@@ -120,12 +120,12 @@ const Order = () => {
               return (
                 <div
                   key={i}
-                  className="flex md:justify-center items-center mt-10  gap-5"
+                  className="flex md:justify-start items-center mt-10  gap-5"
                 >
                   <div>{icon}</div>
-                  <div className="text-secondary text-sm">
-                    <p>{text1}</p>
-                    <p>{text2}</p>
+                  <div className="text-secondary text-sm grid grid-cols-1 gap-5">
+                    <p className="2xl:text-[2rem]">{text1}</p>
+                    <p className="2xl:text-[2rem]">{text2}</p>
                   </div>
                 </div>
               );
